@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerTest : MonoBehaviour {
 
-    public Transform tr;
     public Transform camera;
 	// Use this for initialization
 	void Start () {
@@ -23,7 +22,7 @@ public class PlayerTest : MonoBehaviour {
     //    rotation *= Time.deltaTime;
         transform.Translate(0, 0, translation);
        // transform.Rotate(0, rotation, 0);
-        
-        tr.eulerAngles = new Vector3(0, camera.eulerAngles.y, 0); //카메라 회전에 따라  플레이어도 같이 회전
+
+        transform.eulerAngles = new Vector3(0, camera.eulerAngles.y, 0); //카메라 회전에 따라  플레이어도 같이 회전
     }
 }
