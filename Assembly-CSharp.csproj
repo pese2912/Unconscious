@@ -71,8 +71,9 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
-     <Compile Include="Assets\PlayerPosition.cs" />
-     <Compile Include="Assets\PlayerTest.cs" />
+     <Compile Include="Assets\Scripts\PlayerAnimState.cs" />
+     <Compile Include="Assets\Scripts\PlayerMoveCtrl.cs" />
+     <Compile Include="Assets\Scripts\PlayerTracking.cs" />
      <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
      <None Include="Assets\KajamansRoads\FileNamesDescription.txt" />
