@@ -4,7 +4,8 @@ using System.Collections;
 public class PlayerMoveCtrl : MonoBehaviour {
 
     public Transform camera; // 메인카메라 객체
-    public float speed = 3.0F; // 플레이어 기본 속도
+    public float speed = 1F; // 플레이어 기본 속도
+    public GameObject Player;
 
     //  public float rotationSpeed = 100.0F;
     // Use this for initialization
@@ -12,6 +13,7 @@ public class PlayerMoveCtrl : MonoBehaviour {
     void Start()
     {
         camera = GameObject.Find("Main Camera").GetComponent<Transform>(); // 카메라 위치 컴포넌트 할당
+        Player = GameObject.Find("Player");
     }
 
 
@@ -19,8 +21,8 @@ public class PlayerMoveCtrl : MonoBehaviour {
     {
 
         float Vertical = Input.GetAxis("Vertical") * speed; // 전진 키 입력시
-        float L1 = Input.GetAxis("Horizontal"); // L1 버튼 입력시 
-        float Jump = Input.GetAxis("Jump"); // 점프 버튼 입력시 
+        float L1 = Input.GetAxis("L1"); // L1 버튼 입력시 
+        float Jump = Input.GetAxis("Y"); // 점프 버튼 입력시 
 
     
 
@@ -29,19 +31,19 @@ public class PlayerMoveCtrl : MonoBehaviour {
 
         if (Vertical != 0f) // 전진 키가 눌릴 경우
         {
-            GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Walk; // 플레이어 애니메이션 상태 걷기로
+            Player.GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Walk; // 플레이어 애니메이션 상태 걷기로
             speed = 3f;
             
             if (L1 != 0f) // L1버튼도 같이 눌릴 경우
             {
-                GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Run; // 플레이어 애니메이션 상태 뛰기로
+                Player.GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Run; // 플레이어 애니메이션 상태 뛰기로
                 speed = 5f; // 속도 증가
             }
         }
         
         else // 아무 입력도 없을경우
         {
-            GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Idle; //  플레이어 애니메이션 상태 가만히
+            Player.GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Idle; //  플레이어 애니메이션 상태 가만히
 
         }
 
@@ -49,7 +51,7 @@ public class PlayerMoveCtrl : MonoBehaviour {
 
         if (Jump!= 0)
         {
-            GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Jump; // 플레이어 애니메이션 상태 점프
+            Player.GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Jump; // 플레이어 애니메이션 상태 점프
             
         }
 

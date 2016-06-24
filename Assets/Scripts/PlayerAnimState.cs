@@ -27,7 +27,7 @@ public class PlayerAnimState : MonoBehaviour {
         animState = AnimState.Idle; 
     
         // 첫 상태는 가만히!
-        anim = GameObject.Find("Player").GetComponent<Animation>(); // 플레이어 애니메이션 컴포넌트 할당
+        anim = GetComponent<Animation>(); // 플레이어 애니메이션 컴포넌트 할당
         StartCoroutine("PlayerAction"); //상태에 따른 행동
 
     }

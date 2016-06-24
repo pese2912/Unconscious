@@ -7,6 +7,8 @@ public class PlayerTracking : MonoBehaviour {
     Transform Player;
 
     public float height = 0;
+  public  int a = 1;
+
     // Use this for initialization
 
     void Start()
@@ -20,8 +22,19 @@ public class PlayerTracking : MonoBehaviour {
     
     void Update()
     {
+       // if (transform.localPosition.y > 2) 
+       // { 
+       //     a =-1; 
+       // }
+       // else if (transform.localPosition.y < 1.7) 
+       //  { 
+       //     a = +1; 
+       //  } 
 
-        transform.position = Player.position + new Vector3(0f, height, 0f); //플레이어 위치를 따라감(카메라도 같이 이동)
+        // transform.Translate(Vector3.up * 0.3f * Time.deltaTime * a); 
+
+
+       // transform.position = Player.position + new Vector3(0f, height, 0f); //플레이어 위치를 따라감(카메라도 같이 이동)
 
     }
 
