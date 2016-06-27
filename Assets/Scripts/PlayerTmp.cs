@@ -15,6 +15,6 @@ public class PlayerTmp : MonoBehaviour {
 
         transform.position = Player.transform.position;
        // transform.eulerAngles = new Vector3(0, Player.transform.eulerAngles.y, 0);
-        print(transform.eulerAngles);
+      //  print(transform.eulerAngles);
 	}
 }
