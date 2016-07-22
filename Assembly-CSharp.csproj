@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_5;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_5;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GalaxyBox1\examplescene.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVRDebugHeadController.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPlatformMenu.cs" />
@@ -72,21 +71,44 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
+     <Compile Include="Assets\Scripts\Behind.cs" />
+     <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\EnemyTrigger.cs" />
+     <Compile Include="Assets\Scripts\EvidenceEvent.cs" />
+     <Compile Include="Assets\Scripts\ImageTest.cs" />
+     <Compile Include="Assets\Scripts\IntroTrigger.cs" />
+     <Compile Include="Assets\Scripts\ManageScene.cs" />
+     <Compile Include="Assets\Scripts\MoveObject.cs" />
      <Compile Include="Assets\Scripts\PlayerAnimState.cs" />
      <Compile Include="Assets\Scripts\PlayerMoveCtrl.cs" />
      <Compile Include="Assets\Scripts\PlayerTmp.cs" />
      <Compile Include="Assets\Scripts\PlayerTracking.cs" />
-     <Compile Include="Assets\Scripts\movie.cs" />
+     <Compile Include="Assets\Scripts\SceneFadeInOut.cs" />
+     <Compile Include="Assets\Scripts\TempPlayer.cs" />
+     <Compile Include="Assets\Scripts\TempPlayerState.cs" />
+     <Compile Include="Assets\Scripts\VideoPlay.cs" />
+     <Compile Include="Assets\Scripts\intro.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\RayBehavior.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\RotateBehaviour.cs" />
+     <Compile Include="Assets\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
      <None Include="Assets\hand\Materials\Sources\Shaders\Toony-Basic.shader" />
-     <None Include="Assets\GalaxyBox1\instructions.txt" />
+     <None Include="Assets\Complete_Home_Interior_Pack\NEKOBOLT_Demo_Packs\Nekobolt_Demo_Packs_Readme.txt" />
+     <None Include="Assets\Complete_Home_Interior_Pack\NEKOBOLT_Demo_Packs\Survivalist_Health_Pack_DEMO\UAS_SHP_Readme.txt" />
      <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
+     <None Include="Assets\Complete_Home_Interior_Pack\README.txt" />
      <None Include="Assets\hand\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
      <None Include="Assets\KajamansRoads\FileNamesDescription.txt" />
      <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Complete_Home_Interior_Pack\CHIP_Prefabs\PRE_Ceilings\HSHP_PRE_CEI_Ceiling_preview.txt" />
      <None Include="Assets\hand\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\hand\Materials\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\KajamansRoads\Free\ReadMe.txt" />
+     <None Include="Assets\Urban_Props\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

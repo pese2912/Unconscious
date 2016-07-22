@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerAnimState : MonoBehaviour {
+public class PlayerAnimState : MonoBehaviour
+{
 
     public GameObject Player;
     public GameObject camera;
@@ -10,12 +11,12 @@ public class PlayerAnimState : MonoBehaviour {
     public enum AnimState // 플레이어 애니메이션 상태
     {
 
-       Idle, // 가만히 있을때
-       Walk, // 걸어갈 경우
-       Run, // 달려갈 경우
-       Jump, // 점프할 경우
-       
-       
+        Idle, // 가만히 있을때
+        Walk, // 걸어갈 경우
+        Run, // 달려갈 경우
+        Jump, // 점프할 경우
+
+
     };
 
     public enum ActionState // 플레이어 액션 상태
@@ -25,12 +26,13 @@ public class PlayerAnimState : MonoBehaviour {
         LightOn, // 라이트 켜기
         PhotoMode, // 사진 모드
         PhotoShot, // 사진 찍기
+        Behind, // 숨기 
     };
 
 
 
     public Animation anim; // 애니메이션 객체
-   
+
     [HideInInspector]
     public AnimState animState; //플레이어 현재 상태에 따른 애니메이션을 취하기 위한 변수
     public AnimState AState { get { return animState; } set { animState = value; } }  //접근권한을 위한 get set 함수
@@ -48,7 +50,7 @@ public class PlayerAnimState : MonoBehaviour {
         // 첫 액션은 핸드폰 내리기
 
         Player = GameObject.Find("PlayerTmp");
-        camera = GameObject.Find("Main Camera");
+        camera = GameObject.Find("Camera");
         anim = GetComponent<Animation>(); // 플레이어 애니메이션 컴포넌트 할당
         StartCoroutine("PlayerAnimation"); //상태에 따른 행동
         StartCoroutine("PlayerAction"); // 액션에 따른 행동
@@ -57,44 +59,35 @@ public class PlayerAnimState : MonoBehaviour {
 
 
 
-    void Update()
-    {
-
-    
-
-    }
-
     public IEnumerator PlayerAnimation()  //상태에 따른 행동
     {
 
-       // yield return new WaitForSeconds(5f); 
+        // yield return new WaitForSeconds(5f); 
         while (true)
         {
             switch (animState)
             {
                 case AnimState.Idle:  // 가만히 있을경우                
-                    anim.Play("idle");  
+                    anim.Play("tPose");
                     break;
 
                 case AnimState.Walk: // 걸어갈 경우
-                    anim.Play("walk");
+                    anim.Play("idle");
                     break;
 
                 case AnimState.Run:// 뛰어갈 경우
-                    anim.Play("run");
+                    anim.Play("walk");
                     break;
 
                 case AnimState.Jump:// 점프할 경우   
-                    anim.Play("jump");
+                    anim.Play("tPose");
                     yield return new WaitForSeconds(1.2f);
                     break;
-                    
+
             }
 
             yield return null;
         }
-
-
     }
 
     public IEnumerator PlayerAction()  //액션에 따른 행동
@@ -107,6 +100,8 @@ public class PlayerAnimState : MonoBehaviour {
             {
                 case ActionState.PhoneDown:  // 폰내릴 경우               
                     camera.transform.FindChild("RightHand").gameObject.SetActive(false);
+                    camera.transform.FindChild("RightHand").transform.FindChild("smartphone").transform.FindChild("Spotlight").gameObject.SetActive(false);
+                    camera.transform.FindChild("phone").gameObject.SetActive(false);
                     break;
 
                 case ActionState.PhoneUp: // 폰 올리고 가만히
@@ -125,6 +120,11 @@ public class PlayerAnimState : MonoBehaviour {
                     break;
                 case ActionState.PhotoShot:// 사진 찍기
                     StartCoroutine("Shot");
+                    break;
+                case ActionState.Behind:// 숨기
+                    camera.transform.FindChild("RightHand").gameObject.SetActive(false);
+                    camera.transform.FindChild("RightHand").transform.FindChild("smartphone").transform.FindChild("Spotlight").gameObject.SetActive(false);
+                    camera.transform.FindChild("phone").gameObject.SetActive(false);
                     break;
 
             }
