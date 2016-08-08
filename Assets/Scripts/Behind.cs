@@ -30,7 +30,7 @@ public class Behind : MonoBehaviour
 
         _distance = Vector3.Distance(transform.position, _player.position); // 물건과 플레이어간의 거리차이
 
-        if (_distance <= distance && Input.GetButtonDown("R1")) // 일정한 거리내에 R1키를 눌렀을시
+        if (_distance <= distance && Input.GetButtonDown("Jump")) // 일정한 거리내에 R1키를 눌렀을시
         {
 
             if (_state.actState != PlayerAnimState.ActionState.Behind)// 숨기 상태가 아니면

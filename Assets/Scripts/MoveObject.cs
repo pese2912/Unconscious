@@ -24,8 +24,9 @@ public class MoveObject : MonoBehaviour {
         startPosition = GameObject.Find("Player").GetComponent<Transform>(); // 시작 위치
         startTime = Time.time; // 시간
         journeyLength = Vector3.Distance(startPosition.position, endPosition.position);  // 이동 거리
+    
     }
-	
+  
 	// Update is called once per frame
 	void Update () {
 
