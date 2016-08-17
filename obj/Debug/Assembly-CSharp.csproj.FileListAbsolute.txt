@@ -1,0 +1,2 @@
+C:\Users\Duedapi\Desktop\한이음 vr프로젝트\Unconscious\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Duedapi\Desktop\한이음 vr프로젝트\Unconscious\obj\Debug\Assembly-CSharp.dll

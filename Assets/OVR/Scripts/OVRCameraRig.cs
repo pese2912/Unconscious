@@ -86,27 +86,29 @@ public class OVRCameraRig : MonoBehaviour
 #region Unity Messages
 	private void Awake()
 	{
-		EnsureGameObjectIntegrity();
+		//EnsureGameObjectIntegrity();
 	}
 
 	private void Start()
 	{
-		EnsureGameObjectIntegrity();
+        return;
+        //EnsureGameObjectIntegrity();
 
-		if (!Application.isPlaying)
-			return;
+        //if (!Application.isPlaying)
+        //    return;
 
-		UpdateAnchors();
+        //UpdateAnchors();
 	}
 
 	private void Update()
 	{
-		EnsureGameObjectIntegrity();
+        return;
+        //EnsureGameObjectIntegrity();
 		
-		if (!Application.isPlaying)
-			return;
+        //if (!Application.isPlaying)
+        //    return;
 
-		UpdateAnchors();
+		//UpdateAnchors();
 
 #if UNITY_ANDROID && !UNITY_EDITOR
 
@@ -134,11 +136,11 @@ public class OVRCameraRig : MonoBehaviour
 
 		OVRPose tracker = OVRManager.tracker.GetPose();
 
-		trackerAnchor.localRotation = tracker.orientation;
-		centerEyeAnchor.localRotation = VR.InputTracking.GetLocalRotation(VR.VRNode.CenterEye);
+        trackerAnchor.localRotation = tracker.orientation;
+        centerEyeAnchor.localRotation = VR.InputTracking.GetLocalRotation(VR.VRNode.CenterEye);
         leftEyeAnchor.localRotation = monoscopic ? centerEyeAnchor.localRotation : VR.InputTracking.GetLocalRotation(VR.VRNode.LeftEye);
-		rightEyeAnchor.localRotation = monoscopic ? centerEyeAnchor.localRotation : VR.InputTracking.GetLocalRotation(VR.VRNode.RightEye);
-		leftHandAnchor.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch);
+        rightEyeAnchor.localRotation = monoscopic ? centerEyeAnchor.localRotation : VR.InputTracking.GetLocalRotation(VR.VRNode.RightEye);
+        leftHandAnchor.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch);
         rightHandAnchor.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.RTouch);
 
 		trackerAnchor.localPosition = tracker.position;

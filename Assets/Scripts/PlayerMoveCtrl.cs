@@ -16,9 +16,9 @@ public class PlayerMoveCtrl : MonoBehaviour
     public PlayerAnimState state; // 현재 플레이어 애니메이션 상태
     public AudioSource walkSound;
 
-
     void Start()
     {
+      
         controller = GetComponent<CharacterController>();
         camera = GameObject.Find("Camera").GetComponent<Transform>(); // 카메라 위치 컴포넌트 할당
         Player = GameObject.Find("Player");
@@ -30,7 +30,7 @@ public class PlayerMoveCtrl : MonoBehaviour
 
     void Update()
     {
-
+ 
         float horizontal = Input.GetAxis("Horizontal") * speedRotation;
         float Vertical = Input.GetAxis("Vertical");
         float L1 = Input.GetAxis("L1"); // L1 버튼 입력시 
@@ -74,6 +74,7 @@ public class PlayerMoveCtrl : MonoBehaviour
 
         if (Input.GetButtonDown("X")) // x키 누를시
         {
+      
             if (state.actState == PlayerAnimState.ActionState.PhoneUp) // 폰이 위로 잇을경우에만
             {
                 state.actState = PlayerAnimState.ActionState.PhoneDown; // 폰 내리기
@@ -88,6 +89,7 @@ public class PlayerMoveCtrl : MonoBehaviour
 
         if (Input.GetButtonDown("A")) //a키 누를시
         {
+ 
             if (state.actState == PlayerAnimState.ActionState.PhoneUp) // 폰이 위로 잇을경우에만
             {
                 state.actState = PlayerAnimState.ActionState.LightOn; // 라이트 켜기

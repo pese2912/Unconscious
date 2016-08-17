@@ -124,15 +124,16 @@ public class OVRTracker
 	/// </summary>
 	public OVRPose GetPose(int tracker = 0)
 	{
-		if (!OVRManager.isHmdPresent)
-			return OVRPose.identity;
+        //if (!OVRManager.isHmdPresent)
+        //    return OVRPose.identity;
 
-		var p = OVRPlugin.GetTrackerPose((OVRPlugin.Tracker)tracker).ToOVRPose();
+        //var p = OVRPlugin.GetTrackerPose((OVRPlugin.Tracker)tracker).ToOVRPose();
 		
-		return new OVRPose()
-		{
-			position = p.position,
-			orientation = p.orientation * Quaternion.Euler(0, 180, 0)
-		};
+        //return new OVRPose()
+        //{
+        //    position = p.position,
+        //    orientation = p.orientation * Quaternion.Euler(0, 180, 0)
+        //};
+        return OVRPose.identity;
 	}
 }

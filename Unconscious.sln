@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{CB6B56B0-DAF9-7DC9-660A-F8977785A0E8}") = "Unconscious", "Assembly-CSharp-firstpass.csproj", "{1748F3C9-7F71-D112-7417-B33713FB44C7}"
+EndProject
 Project("{CB6B56B0-DAF9-7DC9-660A-F8977785A0E8}") = "Unconscious", "Assembly-CSharp.csproj", "{1FAE21D9-A1BF-672E-919C-70A5BF4E5E43}"
 EndProject
 Project("{CB6B56B0-DAF9-7DC9-660A-F8977785A0E8}") = "Unconscious", "Assembly-CSharp-Editor.csproj", "{9A57F5F9-5174-97DB-EFD9-4D573637E47D}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1748F3C9-7F71-D112-7417-B33713FB44C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1748F3C9-7F71-D112-7417-B33713FB44C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1748F3C9-7F71-D112-7417-B33713FB44C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1748F3C9-7F71-D112-7417-B33713FB44C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FAE21D9-A1BF-672E-919C-70A5BF4E5E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1FAE21D9-A1BF-672E-919C-70A5BF4E5E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FAE21D9-A1BF-672E-919C-70A5BF4E5E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
