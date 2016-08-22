@@ -72,11 +72,11 @@ public class PlayerAnimState : MonoBehaviour
                     break;
 
                 case AnimState.Walk: // 걸어갈 경우
-                    anim.Play("idle");
+                    //anim.Play("idle");
                     break;
 
                 case AnimState.Run:// 뛰어갈 경우
-                    anim.Play("walk");
+                   // anim.Play("walk");
                     break;
 
                 case AnimState.Jump:// 점프할 경우   

@@ -12,6 +12,7 @@ public class PlayerMoveCtrl : MonoBehaviour
     public float gravity = 20.0F;
     public int evidenceCount = 0;
     public CharacterController controller;
+    private float _speed;
     private Vector3 moveDirection = Vector3.zero;
     public PlayerAnimState state; // 현재 플레이어 애니메이션 상태
     public AudioSource walkSound;
@@ -24,7 +25,7 @@ public class PlayerMoveCtrl : MonoBehaviour
         Player = GameObject.Find("Player");
         state = Player.GetComponent<PlayerAnimState>();
         walkSound = GetComponent<AudioSource>(); // 걸음소리
-
+        _speed = speed;
     }
 
 
@@ -40,7 +41,7 @@ public class PlayerMoveCtrl : MonoBehaviour
 
             moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
+            moveDirection *= _speed;
 
 
         }
@@ -55,13 +56,13 @@ public class PlayerMoveCtrl : MonoBehaviour
             Player.GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Walk; // 플레이어 애니메이션 상태 걷기로
             walkSound.enabled = true;
 
-            speed = 3f;
+            _speed = speed;
 
             if (L1 != 0f) // L1버튼도 같이 눌릴 경우
             {
 
                 Player.GetComponent<PlayerAnimState>().animState = PlayerAnimState.AnimState.Run; // 플레이어 애니메이션 상태 뛰기로
-                speed = 5f; // 속도 증가
+                _speed += 5f; // 속도 증가
             }
         }
 

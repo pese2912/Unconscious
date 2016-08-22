@@ -68,7 +68,6 @@
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_current_time_track.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_topbar_menubutton.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_theme_distinct_button_background.xml" />
-     <None Include="Assets\Complete_Home_Interior_Pack\NEKOBOLT_Demo_Packs\Nekobolt_Demo_Packs_Readme.txt" />
      <None Include="Assets\EasyMovieTexture\Unlit_SphereInside.shader" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_levels.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\values\everyplay_strings.xml" />
@@ -79,7 +78,6 @@
      <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_sidemenu_button.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_trashcan_background.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_theme_button_background.xml" />
-     <None Include="Assets\Complete_Home_Interior_Pack\NEKOBOLT_Demo_Packs\Survivalist_Health_Pack_DEMO\UAS_SHP_Readme.txt" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_timeline_tracker_button_pressed.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_button_background.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_topbar_notification.xml" />
@@ -92,7 +90,6 @@
      <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_endscreen_install_button.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_facecam_timeline.xml" />
-     <None Include="Assets\Complete_Home_Interior_Pack\README.txt" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_action_list_option.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_endscreen_video.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_video_button_bar.xml" />
@@ -124,7 +121,6 @@
      <None Include="Assets\Plugins\Android\everyplay\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\layout\everyplay_splashscreen.xml" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_video_control_button.xml" />
-     <None Include="Assets\Complete_Home_Interior_Pack\CHIP_Prefabs\PRE_Ceilings\HSHP_PRE_CEI_Ceiling_preview.txt" />
      <None Include="Assets\hand\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\hand\Materials\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Plugins\Android\everyplay\res\drawable\everyplay_editor_trimmer_handle.xml" />
