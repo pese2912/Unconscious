@@ -6,6 +6,10 @@ public class PlayerAnimState : MonoBehaviour
 
     public GameObject Player;
     public GameObject camera;
+    public GameObject RightHand;
+    public GameObject Spotlight;
+    public GameObject phone;
+    public GameObject light;
 
 
     public enum AnimState // 플레이어 애니메이션 상태
@@ -29,8 +33,7 @@ public class PlayerAnimState : MonoBehaviour
         Behind, // 숨기 
     };
 
-
-
+    [HideInInspector]
     public Animation anim; // 애니메이션 객체
 
     [HideInInspector]
@@ -49,9 +52,9 @@ public class PlayerAnimState : MonoBehaviour
         actState = ActionState.PhoneDown;
         // 첫 액션은 핸드폰 내리기
 
-        Player = GameObject.Find("PlayerTmp");
-        camera = GameObject.Find("Camera");
-        anim = GetComponent<Animation>(); // 플레이어 애니메이션 컴포넌트 할당
+ 
+
+        anim = Player.GetComponent<Animation>(); // 플레이어 애니메이션 컴포넌트 할당
         StartCoroutine("PlayerAnimation"); //상태에 따른 행동
         StartCoroutine("PlayerAction"); // 액션에 따른 행동
 
@@ -99,32 +102,32 @@ public class PlayerAnimState : MonoBehaviour
             switch (actState)
             {
                 case ActionState.PhoneDown:  // 폰내릴 경우               
-                    camera.transform.FindChild("RightHand").gameObject.SetActive(false);
-                    camera.transform.FindChild("RightHand").transform.FindChild("smartphone").transform.FindChild("Spotlight").gameObject.SetActive(false);
-                    camera.transform.FindChild("phone").gameObject.SetActive(false);
+                    RightHand.SetActive(false);
+                    Spotlight.SetActive(false);
+                    phone.SetActive(false);
                     break;
 
                 case ActionState.PhoneUp: // 폰 올리고 가만히
-                    camera.transform.FindChild("RightHand").gameObject.SetActive(true);
-                    camera.transform.FindChild("RightHand").transform.FindChild("smartphone").transform.FindChild("Spotlight").gameObject.SetActive(false);
-                    camera.transform.FindChild("phone").gameObject.SetActive(false);
+                    RightHand.SetActive(true);
+                    Spotlight.SetActive(false);
+                    phone.SetActive(false);
                     break;
 
                 case ActionState.LightOn:// 라이트 켜기
-                    camera.transform.FindChild("RightHand").transform.FindChild("smartphone").transform.FindChild("Spotlight").gameObject.SetActive(true);
+                    Spotlight.SetActive(true);
                     break;
 
                 case ActionState.PhotoMode:// 사진 모드
-                    camera.transform.FindChild("phone").gameObject.SetActive(true);
-                    camera.transform.FindChild("RightHand").gameObject.SetActive(false);
+                    phone.SetActive(true);
+                    RightHand.SetActive(false);
                     break;
                 case ActionState.PhotoShot:// 사진 찍기
                     StartCoroutine("Shot");
                     break;
                 case ActionState.Behind:// 숨기
-                    camera.transform.FindChild("RightHand").gameObject.SetActive(false);
-                    camera.transform.FindChild("RightHand").transform.FindChild("smartphone").transform.FindChild("Spotlight").gameObject.SetActive(false);
-                    camera.transform.FindChild("phone").gameObject.SetActive(false);
+                    RightHand.SetActive(false);
+                    Spotlight.SetActive(false);
+                    phone.SetActive(false);
                     break;
 
             }
@@ -138,9 +141,9 @@ public class PlayerAnimState : MonoBehaviour
     public IEnumerator Shot()  //사진찍기
     {
         yield return null;
-        GameObject.Find("phone").transform.FindChild("light").gameObject.SetActive(true);
+        light.SetActive(true);
         yield return new WaitForSeconds(0.5f);
-        GameObject.Find("phone").transform.FindChild("light").gameObject.SetActive(false);
+        light.SetActive(false);
         actState = ActionState.PhotoMode;
     }
 

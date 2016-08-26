@@ -10,7 +10,7 @@ public class FrameFix : MonoBehaviour {
     }
     void Awake()
     {
-        Time.captureFramerate = frame;
+       // Time.captureFramerate = frame;
     }
 
 
