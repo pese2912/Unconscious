@@ -15,7 +15,7 @@ public class EvidenceEvent : MonoBehaviour {
 	
 	public void OnTriggerStay(Collider col){
 		Debug.Log ("toched");
-        if (tmpPlayer.actState==PlayerAnimState.ActionState.PhotoShot && !isTouched)
+		if (tmpPlayer.TState==PlayerAnimState.ActionState.PhotoShot && !isTouched)
         {
 			Debug.Log ("Evidence");
 			//isTouched = true;

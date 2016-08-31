@@ -33,10 +33,10 @@ public class Behind : MonoBehaviour
         if (_distance <= distance && Input.GetButtonDown("Jump")) // 일정한 거리내에 R1키를 눌렀을시
         {
 
-            if (_state.actState != PlayerAnimState.ActionState.Behind)// 숨기 상태가 아니면
+			if (_state.TState != PlayerAnimState.ActionState.Behind)// 숨기 상태가 아니면
             {
 
-                _state.actState = PlayerAnimState.ActionState.Behind; // 상태를 숨기로
+				_state.TState = PlayerAnimState.ActionState.Behind; // 상태를 숨기로
                 _player.localScale = new Vector3(0.1f, 0.1f, 0.1f); // 크기를 작게
                 _controller.enabled = false;  // 컨트롤러 비활성
                 move.active = true; // 무브!
@@ -45,7 +45,7 @@ public class Behind : MonoBehaviour
 
             else // 숨기 상태이면
             {
-                _state.actState = PlayerAnimState.ActionState.PhoneDown; //기본으로
+				_state.TState = PlayerAnimState.ActionState.PhoneDown; //기본으로
                 _player.localScale = new Vector3(1f, 1f, 1f); //원래 크기로
                 _controller.enabled = true; // 컨트롤러 활성
                 move.active = false; 

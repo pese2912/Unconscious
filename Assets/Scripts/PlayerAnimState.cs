@@ -3,25 +3,20 @@ using System.Collections;
 
 public class PlayerAnimState : MonoBehaviour
 {
-
-    public GameObject Player;
-    public GameObject camera;
-    public GameObject RightHand;
-    public GameObject Spotlight;
-    public GameObject phone;
-    public GameObject light;
-
-
-    public enum AnimState // 플레이어 애니메이션 상태
-    {
-
-        Idle, // 가만히 있을때
-        Walk, // 걸어갈 경우
-        Run, // 달려갈 경우
-        Jump, // 점프할 경우
+	[SerializeField]
+	private GameObject Player;
+	[SerializeField]
+	private GameObject camera;
+	[SerializeField]
+	private GameObject RightHand;
+	[SerializeField]
+	private GameObject Spotlight;
+	[SerializeField]
+	private GameObject phone;
+	[SerializeField]
+	private GameObject light;
 
 
-    };
 
     public enum ActionState // 플레이어 액션 상태
     {
@@ -30,68 +25,27 @@ public class PlayerAnimState : MonoBehaviour
         LightOn, // 라이트 켜기
         PhotoMode, // 사진 모드
         PhotoShot, // 사진 찍기
-        Behind, // 숨기 
+        Behind, // 숨기
+
     };
+		
 
-    [HideInInspector]
-    public Animation anim; // 애니메이션 객체
-
-    [HideInInspector]
-    public AnimState animState; //플레이어 현재 상태에 따른 애니메이션을 취하기 위한 변수
-    public AnimState AState { get { return animState; } set { animState = value; } }  //접근권한을 위한 get set 함수
-
-    public ActionState actState; //플레이어 현재 상태에 따른 액션을 취하기 위한 변수
+	[SerializeField]
+	private ActionState actState; //플레이어 현재 상태에 따른 액션을 취하기 위한 변수
     public ActionState TState { get { return actState; } set { actState = value; } }  //접근권한을 위한 get set 함수
 
 
     void Start()
     {
 
-        animState = AnimState.Idle;
-        // 첫 상태는 가만히!
         actState = ActionState.PhoneDown;
         // 첫 액션은 핸드폰 내리기
-
- 
-
-        anim = Player.GetComponent<Animation>(); // 플레이어 애니메이션 컴포넌트 할당
-        StartCoroutine("PlayerAnimation"); //상태에 따른 행동
+	
         StartCoroutine("PlayerAction"); // 액션에 따른 행동
 
     }
 
 
-
-    public IEnumerator PlayerAnimation()  //상태에 따른 행동
-    {
-
-        // yield return new WaitForSeconds(5f); 
-        while (true)
-        {
-            switch (animState)
-            {
-                case AnimState.Idle:  // 가만히 있을경우                
-                    anim.Play("tPose");
-                    break;
-
-                case AnimState.Walk: // 걸어갈 경우
-                    //anim.Play("idle");
-                    break;
-
-                case AnimState.Run:// 뛰어갈 경우
-                   // anim.Play("walk");
-                    break;
-
-                case AnimState.Jump:// 점프할 경우   
-                    anim.Play("tPose");
-                    yield return new WaitForSeconds(1.2f);
-                    break;
-
-            }
-
-            yield return null;
-        }
-    }
 
     public IEnumerator PlayerAction()  //액션에 따른 행동
     {
@@ -134,7 +88,6 @@ public class PlayerAnimState : MonoBehaviour
 
             yield return null;
         }
-
 
     }
 
