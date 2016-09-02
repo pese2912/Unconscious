@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 7b23322042cca0b45a566ed8c20846b9
+timeCreated: 1465035093
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Child_metacarpal1_L
+    100002: Child_metacarpal1_L_end
+    100004: finger1-1_L
+    100006: finger1-2_L
+    100008: finger1-3_L
+    100010: finger1-3_L_end
+    100012: finger2-1_L
+    100014: finger2-2_L
+    100016: finger2-3_L
+    100018: finger2-3_L_end
+    100020: finger3-1_L
+    100022: finger3-2_L
+    100024: finger3-3_L
+    100026: finger3-3_L_end
+    100028: finger4-1_L
+    100030: finger4-2_L
+    100032: finger4-3_L
+    100034: finger4-3_L_end
+    100036: finger5-1_L
+    100038: finger5-2_L
+    100040: finger5-3_L
+    100042: finger5-3_L_end
+    100044: L_Smart_Armature
+    100046: L_Smartphone
+    100048: Left_Arm
+    100050: Left_Arm_Armature
+    100052: lowerarm01_L
+    100054: lowerarm02_L
+    100056: metacarpal1_L
+    100058: metacarpal2_L
+    100060: metacarpal3_L
+    100062: metacarpal4_L
+    100064: shoulder01_L
+    100066: //RootNode
+    100068: upperarm01_L
+    100070: upperarm02_L
+    100072: wrist_L
+    400000: Child_metacarpal1_L
+    400002: Child_metacarpal1_L_end
+    400004: finger1-1_L
+    400006: finger1-2_L
+    400008: finger1-3_L
+    400010: finger1-3_L_end
+    400012: finger2-1_L
+    400014: finger2-2_L
+    400016: finger2-3_L
+    400018: finger2-3_L_end
+    400020: finger3-1_L
+    400022: finger3-2_L
+    400024: finger3-3_L
+    400026: finger3-3_L_end
+    400028: finger4-1_L
+    400030: finger4-2_L
+    400032: finger4-3_L
+    400034: finger4-3_L_end
+    400036: finger5-1_L
+    400038: finger5-2_L
+    400040: finger5-3_L
+    400042: finger5-3_L_end
+    400044: L_Smart_Armature
+    400046: L_Smartphone
+    400048: Left_Arm
+    400050: Left_Arm_Armature
+    400052: lowerarm01_L
+    400054: lowerarm02_L
+    400056: metacarpal1_L
+    400058: metacarpal2_L
+    400060: metacarpal3_L
+    400062: metacarpal4_L
+    400064: shoulder01_L
+    400066: //RootNode
+    400068: upperarm01_L
+    400070: upperarm02_L
+    400072: wrist_L
+    4300000: Left_Arm
+    4300002: L_Smartphone
+    7400000: Left_Arm_Armature|L_CAMERA_OUT
+    7400002: Left_Arm_Armature|L_FL_IDLE
+    7400004: Left_Arm_Armature|L_FL_ON_CAMERA_OUT
+    7400006: Left_Arm_Armature|L_FL_OUT
+    7400008: L_Smart_Armature|L_FL_OUT
+    7400010: L_Smartphone|L_FL_ON_CAMERA_OUT
+    9500000: //RootNode
+    13700000: L_Smartphone
+    13700002: Left_Arm
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,768 @@
+fileFormatVersion: 2
+guid: cc3da3348aae77446af536acc7cb8bad
+timeCreated: 1464964991
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Child_metacarpal1_R
+    100002: Child_metacarpal1_R_end
+    100004: finger1-1_R
+    100006: finger1-2_R
+    100008: finger1-3_R
+    100010: finger1-3_R_end
+    100012: finger2-1_R
+    100014: finger2-2_R
+    100016: finger2-3_R
+    100018: finger2-3_R_end
+    100020: finger3-1_R
+    100022: finger3-2_R
+    100024: finger3-3_R
+    100026: finger3-3_R_end
+    100028: finger4-1_R
+    100030: finger4-2_R
+    100032: finger4-3_R
+    100034: finger4-3_R_end
+    100036: finger5-1_R
+    100038: finger5-2_R
+    100040: finger5-3_R
+    100042: finger5-3_R_end
+    100044: lowerarm01_R
+    100046: lowerarm02_R
+    100048: metacarpal1_R
+    100050: metacarpal2_R
+    100052: metacarpal3_R
+    100054: metacarpal4_R
+    100056: Right_Arm
+    100058: Right_Arm_Armature
+    100060: shoulder01_R
+    100062: Smart_Armature
+    100064: //RootNode
+    100066: Smartphone
+    100068: upperarm01_R
+    100070: upperarm02_R
+    100072: wrist_R
+    400000: Child_metacarpal1_R
+    400002: Child_metacarpal1_R_end
+    400004: finger1-1_R
+    400006: finger1-2_R
+    400008: finger1-3_R
+    400010: finger1-3_R_end
+    400012: finger2-1_R
+    400014: finger2-2_R
+    400016: finger2-3_R
+    400018: finger2-3_R_end
+    400020: finger3-1_R
+    400022: finger3-2_R
+    400024: finger3-3_R
+    400026: finger3-3_R_end
+    400028: finger4-1_R
+    400030: finger4-2_R
+    400032: finger4-3_R
+    400034: finger4-3_R_end
+    400036: finger5-1_R
+    400038: finger5-2_R
+    400040: finger5-3_R
+    400042: finger5-3_R_end
+    400044: lowerarm01_R
+    400046: lowerarm02_R
+    400048: metacarpal1_R
+    400050: metacarpal2_R
+    400052: metacarpal3_R
+    400054: metacarpal4_R
+    400056: Right_Arm
+    400058: Right_Arm_Armature
+    400060: shoulder01_R
+    400062: Smart_Armature
+    400064: //RootNode
+    400066: Smartphone
+    400068: upperarm01_R
+    400070: upperarm02_R
+    400072: wrist_R
+    4300000: Right_Arm
+    4300002: Smartphone
+    7400000: Right_Arm_Armature|CAMERA_OUT
+    7400002: Right_Arm_Armature|FL_IDLE
+    7400004: Right_Arm_Armature|FL_ON_CAMERA_OUT
+    7400006: Right_Arm_Armature|FL_OUT
+    7400008: Smart_Armature|FL_OUT
+    7400010: Smartphone|FL_ON_CAMERA_OUT
+    9500000: //RootNode
+    13700000: Right_Arm
+    13700002: Smartphone
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Right_Arm_Armature|CAMERA_OUT
+      takeName: Right_Arm_Armature|CAMERA_OUT
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Arm_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R/finger1-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R/finger2-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R/Child_metacarpal1_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R/finger3-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R/finger4-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R/finger5-3_R_end
+        weight: 1
+      - path: Smartphone
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Right_Arm_Armature|FL_IDLE
+      takeName: Right_Arm_Armature|FL_IDLE
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Arm_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R/finger1-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R/finger2-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R/Child_metacarpal1_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R/finger3-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R/finger4-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R/finger5-3_R_end
+        weight: 1
+      - path: Smartphone
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Right_Arm_Armature|FL_ON_CAMERA_OUT
+      takeName: Right_Arm_Armature|FL_ON_CAMERA_OUT
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Arm_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R/finger1-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R/finger2-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R/Child_metacarpal1_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R/finger3-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R/finger4-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R/finger5-3_R_end
+        weight: 1
+      - path: Smartphone
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Right_Arm_Armature|FL_OUT
+      takeName: Right_Arm_Armature|FL_OUT
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Arm_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R/finger1-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R/finger2-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R/Child_metacarpal1_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R/finger3-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R/finger4-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R/finger5-3_R_end
+        weight: 1
+      - path: Smartphone
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Smart_Armature|FL_OUT
+      takeName: Smart_Armature|FL_OUT
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Arm_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R/finger1-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R/finger2-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R/Child_metacarpal1_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R/finger3-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R/finger4-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R/finger5-3_R_end
+        weight: 1
+      - path: Smartphone
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Smartphone|FL_ON_CAMERA_OUT
+      takeName: Smartphone|FL_ON_CAMERA_OUT
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Arm_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/finger1-1_R/finger1-2_R/finger1-3_R/finger1-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/finger2-1_R/finger2-2_R/finger2-3_R/finger2-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal1_R/Smart_Armature/Child_metacarpal1_R/Child_metacarpal1_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal2_R/finger3-1_R/finger3-2_R/finger3-3_R/finger3-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal3_R/finger4-1_R/finger4-2_R/finger4-3_R/finger4-3_R_end
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R
+        weight: 1
+      - path: Right_Arm_Armature/shoulder01_R/upperarm01_R/upperarm02_R/lowerarm01_R/lowerarm02_R/wrist_R/metacarpal4_R/finger5-1_R/finger5-2_R/finger5-3_R/finger5-3_R_end
+        weight: 1
+      - path: Smartphone
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

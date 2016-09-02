@@ -45,7 +45,7 @@ public class Behind : MonoBehaviour
 
             else // 숨기 상태이면
             {
-				_state.TState = PlayerAnimState.ActionState.PhoneDown; //기본으로
+				_state.TState = PlayerAnimState.ActionState.Idle; //기본으로
                 _player.localScale = new Vector3(1f, 1f, 1f); //원래 크기로
                 _controller.enabled = true; // 컨트롤러 활성
                 move.active = false; 
