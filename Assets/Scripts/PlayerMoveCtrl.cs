@@ -13,9 +13,9 @@ public class PlayerMoveCtrl : MonoBehaviour
 	//[SerializeField]
 	//private AudioClip runSound;
 	[SerializeField]
-	private float speed = 3F; // 플레이어 기본 속도
+	private float speed = 5F; // 플레이어 기본 속도
 	[SerializeField]
-	private float speedRotation = 80F;
+	private float speedRotation = 60;
 
     [HideInInspector]
     public int evidenceCount = 0;
@@ -34,7 +34,7 @@ public class PlayerMoveCtrl : MonoBehaviour
         _speedRotation = speedRotation;
     }
 
-
+   
     void Update()
     {
         //입력
@@ -57,26 +57,59 @@ public class PlayerMoveCtrl : MonoBehaviour
 
         if(_vertical == 0f || _horizontal == 0f)
         {
+            _speed = speed;
+            PlayerAnimState.instance.isRun = false;
             Audio.enabled = false;
         }
-       else if (_vertical != 0f && _horizontal != 0f) // 전진 키가 눌릴 경우
+        else if (_vertical != 0f)
         {
-         //   Audio.clip = walkSound;
-            Audio.enabled = true;
+            //   Audio.clip = walkSound;
+            if(PlayerAnimState.instance.TState != PlayerAnimState.ActionState.Behind)
+              Audio.enabled = true;
             _speed = speed;
 
             if (L1 != 0f) // L1버튼도 같이 눌릴 경우
             {
-               // Audio.clip = walkSound;
-
+                // Audio.clip = walkSound;
+                PlayerAnimState.instance.isRun = true;
                 _speed += 3f; // 속도 증가
+            }
+        }
+        else if (_horizontal != 0f)
+        {
+            //   Audio.clip = walkSound;
+            if (PlayerAnimState.instance.TState != PlayerAnimState.ActionState.Behind)
+                Audio.enabled = true;
+            _speed = speed;
+
+            if (L1 != 0f) // L1버튼도 같이 눌릴 경우
+            {
+                // Audio.clip = walkSound;
+                PlayerAnimState.instance.isRun = true;
+                _speed += 3f; // 속도 증가
+            }
+        }
+        else if (_vertical != 0f && _horizontal != 0f) // 전진 키가 눌릴 경우
+        {
+            //   Audio.clip = walkSound;
+            if (PlayerAnimState.instance.TState != PlayerAnimState.ActionState.Behind)
+                Audio.enabled = true;
+            _speed = speed;
+
+            if (L1 != 0f) // L1버튼도 같이 눌릴 경우
+            {
+                // Audio.clip = walkSound;
+                PlayerAnimState.instance.isRun = true;
+               _speed += 3f; // 속도 증가
             }
         }
 
         else // 아무 입력도 없을경우
         {
+            _speed = speed;
+            PlayerAnimState.instance.isRun = false;
             Audio.enabled = false;
-
+        
         }
 
 
@@ -100,5 +133,4 @@ public class PlayerMoveCtrl : MonoBehaviour
     }
 
 
-		
 }

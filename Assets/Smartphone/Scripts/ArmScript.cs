@@ -64,8 +64,9 @@ public class ArmScript : MonoBehaviour
     static bool flashAuto = true;
 
     //Public variables
+    public Transform[] UI;
 
-
+    public AudioSource photoAudio;
     public PhoneUI instanceUI;
     //Variables used to store different values of the Flash light which can be changed via the inspector panel.
     public float flashlightRange = 180;
@@ -74,8 +75,6 @@ public class ArmScript : MonoBehaviour
     public GameObject smartPhone;
 
     //Private variables
-    [SerializeField]
-    private PlayerAnimState state; // 현재 플레이어 애니메이션 상태
 
     Camera playerCamera;
     GameObject smartPhoneFlashlight;
@@ -87,14 +86,15 @@ public class ArmScript : MonoBehaviour
     float lightSpotAngle;
     float lightIntensity;
 
+
     void Awake()
     {
-        if(!Checking())
-            #if UNITY_EDITOR
-                EditorApplication.isPlaying = false;
-            #else
+        if (!Checking())
+#if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+#else
                 Application.Quit();
-            #endif
+#endif
         playerCamera = Camera.main.GetComponent<Camera>();
         smartPhoneFlashlight = GameObject.FindGameObjectWithTag("CameraFlashlight");
         fov = playerCamera.fieldOfView;
@@ -108,109 +108,143 @@ public class ArmScript : MonoBehaviour
         lightRange = instanceUI.flashlightUI.GetComponent<Light>().range;
         lightSpotAngle = instanceUI.flashlightUI.GetComponent<Light>().spotAngle;
         lightIntensity = instanceUI.flashlightUI.GetComponent<Light>().intensity;
+
+
     }
 
 
     void Update()
     {
-        if (canPress) { 
-            //Input "R1"
-            if (Input.GetButtonDown("R1")) 
+        bool isCanvas = false;
+
+        foreach (Transform canvas in UI) //ui 하위 오브젝트 하나씩
+        {
+
+            if (canvas.name.Contains("Canvas"))// canvas
             {
-                if (!isFlashOut && !isCameraOut)
+                if (canvas.gameObject.activeSelf)
+                    isCanvas = true;
+            }
+        }
+
+        if (isCanvas)
+        {
+            PlayerAnimState.instance.isUiBtn = true;
+        }
+        else if (!isCanvas)
+        {
+            PlayerAnimState.instance.isUiBtn = false;
+        }
+
+
+        if (canPress) {
+            //Input "R1"
+
+            if (Input.GetButtonDown("R1"))
+            {
+                if (PlayerAnimState.instance.TState != PlayerAnimState.ActionState.Behind)
                 {
-                   
-                    state.TState = PlayerAnimState.ActionState.PhoneUpLightOn;
-                    StartCoroutine("StartPlayingFlashlight");
-                }
-                else if (isFlashOut && !isCameraOut)
-                {
-                    state.TState = PlayerAnimState.ActionState.Idle;
-                    StartCoroutine("StopPlayingFlashlight");
-                }
-                else if (isFlashOut && isCameraOut)
-                {
-                    state.TState = PlayerAnimState.ActionState.PhotoModeLightOff;
-                    smartPhoneFlashlight.SetActive(false);
-                    instanceUI.flashlightUI.SetActive(false);
-                    instanceUI.FlButtonOffImg.enabled = true;
-                    instanceUI.FlButtonOnImg.enabled = false;
-                    flashAuto = false;
-                    flashOn = true;
-                    FlashFunction();
-                    isFlashOut = false;
-                }
-                else if (!isFlashOut && isCameraOut)
-                {
-                    state.TState = PlayerAnimState.ActionState.PhotoModeLightOn;
-                    smartPhoneFlashlight.SetActive(false);
-                    instanceUI.flashlightUI.SetActive(true);
-                    instanceUI.FlButtonOnImg.enabled = true;
-                    instanceUI.FlButtonOffImg.enabled = false;
-                    flashAuto = false;
-                    flashOn = false;
-                    FlashFunction();
-                    isFlashOut = true;
+                    if (!isFlashOut && !isCameraOut)
+                    {
+
+                        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhoneUpLightOn;
+                        StartCoroutine("StartPlayingFlashlight");
+                    }
+                    else if (isFlashOut && !isCameraOut)
+                    {
+                        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.Idle;
+                        StartCoroutine("StopPlayingFlashlight");
+                    }
+                    else if (isFlashOut && isCameraOut)
+                    {
+                        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhotoModeLightOff;
+                        smartPhoneFlashlight.SetActive(false);
+                        instanceUI.flashlightUI.SetActive(false);
+                        instanceUI.FlButtonOffImg.enabled = true;
+                        instanceUI.FlButtonOnImg.enabled = false;
+                        flashAuto = true;
+                        flashOn = true;
+                        FlashFunction();
+                        isFlashOut = false;
+                    }
+
+                    else if (!isFlashOut && isCameraOut)
+                    {
+                        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhotoModeLightOn;
+                        smartPhoneFlashlight.SetActive(false);
+                        instanceUI.flashlightUI.SetActive(true);
+                        instanceUI.FlButtonOnImg.enabled = true;
+                        instanceUI.FlButtonOffImg.enabled = false;
+                        flashAuto = true;
+                        flashOn = true;
+                        FlashFunction();
+                        isFlashOut = true;
+                    }
                 }
             }
 
             //Input "A"
             if (Input.GetButtonDown("A"))
             {
-                if (!isCameraOut)
+                if (!PlayerAnimState.instance.isUiBtn && PlayerAnimState.instance.TState != PlayerAnimState.ActionState.Behind)
                 {
-                    if (isFlashOut)
+                    if (!isCameraOut)
                     {
-                        state.TState = PlayerAnimState.ActionState.PhotoModeLightOn;
-                        anim.SetBool("CameraOut", true);
-                        DisActivateKids(false);
-                        StartCoroutine("StartPlayingCameraAndFlash");
-                        isCameraOut = true;
+                        if (isFlashOut)
+                        {
+                            PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhotoModeLightOn;
+                            anim.SetBool("CameraOut", true);
+                            DisActivateKids(false);
+                            StartCoroutine("StartPlayingCameraAndFlash");
+                            isCameraOut = true;
+                        }
+                        else
+                        {
+                            PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhotoModeLightOff;
+                            DisActivateKids(false);
+                            StartCoroutine("StartPlayingCamera");
+                            anim.SetBool("CameraOut", true);
+                            isCameraOut = true;
+                        }
                     }
-                    else
+
+                    else if (isCameraOut && !isFlashOut)
                     {
-                        state.TState = PlayerAnimState.ActionState.PhotoModeLightOff;
-                        DisActivateKids(false);
-                        StartCoroutine("StartPlayingCamera");
-                        anim.SetBool("CameraOut", true);
-                        isCameraOut = true;
+
+                        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.Idle;
+                        StartCoroutine("StopPlayingCamera");
                     }
-                }
 
-                else if(isCameraOut && !isFlashOut)
-                {
-                
-                    state.TState = PlayerAnimState.ActionState.Idle;
-                    StartCoroutine("StopPlayingCamera");
-                }
-
-                else if (isCameraOut && isFlashOut)
-                {
-                    state.TState = PlayerAnimState.ActionState.PhoneUpLightOn;
-                    StartCoroutine("StopPlayingCameraStartFlashlight");
+                    else if (isCameraOut && isFlashOut)
+                    {
+                        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhoneUpLightOn;
+                        StartCoroutine("StopPlayingCameraStartFlashlight");
+                    }
                 }
             }
+
             if (isCameraOut)
             {
                 //Input Left Mouse Button
                 if (Input.GetButtonDown("B"))
                 {
-                    state.TState = PlayerAnimState.ActionState.PhotoShot;
+
                     StartCoroutine("TakeScreenShot");
+
                 }
-                //Input Right Mouse Button
-                if (Input.GetButtonDown("Fire2"))
-                {
-                    if (flashAuto && flashOn)
-                    {
-                        smartPhoneFlashlight.SetActive(false);
-                        instanceUI.flashlightUI.SetActive(false);
-                        instanceUI.FlButtonOffImg.enabled = true;
-                        instanceUI.FlButtonOnImg.enabled = false;
-                        isFlashOut = false;
-                    }
-                    FlashFunction(); 
-                }
+                ////Input Right Mouse Button
+                //if (Input.GetButtonDown("Fire2"))
+                //{
+                //    if (flashAuto && flashOn)
+                //    {
+                //        smartPhoneFlashlight.SetActive(false);
+                //        instanceUI.flashlightUI.SetActive(false);
+                //        instanceUI.FlButtonOffImg.enabled = true;
+                //        instanceUI.FlButtonOnImg.enabled = false;
+                //        isFlashOut = false;
+                //    }
+                //    FlashFunction();
+                //}
 
                 if (Input.GetAxis("Oculus_GearVR_RThumbstickY") != 0)
                 {
@@ -222,6 +256,20 @@ public class ArmScript : MonoBehaviour
         }
     }
 
+    public void phoneOff()
+    {
+        
+            if (PlayerAnimState.instance.TState == PlayerAnimState.ActionState.PhoneUpLightOn)
+            {
+                StartCoroutine("StopPlayingFlashlight");
+            }
+            else if (PlayerAnimState.instance.TState == PlayerAnimState.ActionState.PhotoModeLightOff
+                || PlayerAnimState.instance.TState == PlayerAnimState.ActionState.PhotoModeLightOn)
+            {
+                StartCoroutine("StopPlayingCamera");
+            }
+        
+    }
     /* 
      * The following function turns off the Camera UI while the screenshot is taken.
      * It turns on TakeScreenshotScript.
@@ -229,6 +277,8 @@ public class ArmScript : MonoBehaviour
     */
     IEnumerator TakeScreenShot()
     {
+        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhotoShot;
+        photoAudio.enabled = true;
         instanceUI.cameraClickedImg.enabled = true;
         if (photoWithFL)
         {
@@ -237,7 +287,9 @@ public class ArmScript : MonoBehaviour
             instanceUI.flashlightUI.GetComponent<Light>().range = flashlightRange;
             instanceUI.flashlightUI.GetComponent<Light>().spotAngle = flashlightSpotAngle;
         }
-        yield return null;
+
+        AI_Enemy.instance.OnTakePicture();
+        yield return new WaitForSeconds(1f);
         instanceUI.cameraUI.SetActive(false);
         yield return null;
        // GetComponent<TakeScreenshotScript>().enabled = true;
@@ -247,13 +299,17 @@ public class ArmScript : MonoBehaviour
         instanceUI.cameraImg.enabled = true;
         instanceUI.cameraClickedImg.enabled = false;
         instanceUI.cameraImg.enabled = true;
+
         if (photoWithFL)
         {
             instanceUI.flashlightUI.GetComponent<Light>().intensity = lightIntensity;
             instanceUI.flashlightUI.GetComponent<Light>().range = lightRange;
             instanceUI.flashlightUI.GetComponent<Light>().spotAngle = lightSpotAngle;
-            instanceUI.flashlightUI.SetActive(false);
+            instanceUI.flashlightUI.SetActive(true);
         }
+
+        photoAudio.enabled = false;
+        PlayerAnimState.instance.TState = PlayerAnimState.ActionState.PhotoModeLightOn;
         yield return null;
     }
 
@@ -340,8 +396,8 @@ public class ArmScript : MonoBehaviour
         DisActivateKids(true);
         instanceUI.cameraUI.SetActive(true);
         instanceUI.cameraImg.enabled = true;
-        flashAuto = false;
-        flashOn = false;
+        flashAuto = true;
+        flashOn = true;
         FlashFunction();
         instanceUI.flashlightUI.SetActive(true);
         instanceUI.FlButtonOnImg.enabled = true;
@@ -414,7 +470,7 @@ public class ArmScript : MonoBehaviour
             instanceUI.flashButtonOffImg.enabled = false;
             instanceUI.flashButtonAutoImg.enabled = false;
             instanceUI.flashButtonOutImg.enabled = false;
-            flashAuto = false;
+            flashAuto = true;
             flashOn = true;
         }
         else if (!flashAuto && flashOn)
@@ -425,7 +481,7 @@ public class ArmScript : MonoBehaviour
             instanceUI.flashButtonAutoImg.enabled = false;
             instanceUI.flashButtonOutImg.enabled = false;
             flashAuto = true;
-            flashOn = false;
+            flashOn = true;
         }
         else if (flashAuto && !flashOn)
         {

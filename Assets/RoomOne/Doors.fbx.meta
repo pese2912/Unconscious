@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: f4ce2fc785e4e184b98aada831b3c157
+timeCreated: 1473570840
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AB
+    100002: B_detail
+    100004: bathroom
+    100006: C_part
+    100008: Cube
+    100010: Cube_1
+    100012: Cube_1_2
+    100014: Cube_2
+    100016: Cylinder
+    100018: Cylinder_1
+    100020: Cylinder_2
+    100022: Cylinder_2_2
+    100024: Cylinder_3
+    100026: door001
+    100028: door0012
+    100030: door001_1
+    100032: door_3
+    100034: //RootNode
+    100036: glass_door
+    100038: Null
+    100040: Null_1
+    100042: open_door_2
+    400000: AB
+    400002: B_detail
+    400004: bathroom
+    400006: C_part
+    400008: Cube
+    400010: Cube_1
+    400012: Cube_1_2
+    400014: Cube_2
+    400016: Cylinder
+    400018: Cylinder_1
+    400020: Cylinder_2
+    400022: Cylinder_2_2
+    400024: Cylinder_3
+    400026: door001
+    400028: door0012
+    400030: door001_1
+    400032: door_3
+    400034: //RootNode
+    400036: glass_door
+    400038: Null
+    400040: Null_1
+    400042: open_door_2
+    2300000: Cube
+    2300002: Cube_1
+    2300004: Cube_1_2
+    2300006: Cube_2
+    2300008: Cylinder
+    2300010: Cylinder_1
+    2300012: Cylinder_2
+    2300014: Cylinder_2_2
+    2300016: Cylinder_3
+    2300018: door001
+    2300020: door0012
+    2300022: door001_1
+    2300024: door_3
+    2300026: glass_door
+    2300028: open_door_2
+    3300000: Cube
+    3300002: Cube_1
+    3300004: Cube_1_2
+    3300006: Cube_2
+    3300008: Cylinder
+    3300010: Cylinder_1
+    3300012: Cylinder_2
+    3300014: Cylinder_2_2
+    3300016: Cylinder_3
+    3300018: door001
+    3300020: door0012
+    3300022: door001_1
+    3300024: door_3
+    3300026: glass_door
+    3300028: open_door_2
+    4300000: door_3
+    4300002: open_door_2
+    4300004: Cube_1
+    4300006: Cylinder
+    4300008: Cube
+    4300010: Cube_1_2
+    4300012: Cylinder_2
+    4300014: Cube_2
+    4300016: door0012
+    4300018: door001
+    4300020: door001_1
+    4300022: glass_door
+    4300024: Cylinder_1
+    4300026: Cylinder_3
+    4300028: Cylinder_2_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
